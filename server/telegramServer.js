@@ -7,10 +7,6 @@ dotenv.config();
 
 const app = express();
 
-/**
- * 1) CORS MUST BE BEFORE express.json()
- * 2) Explicit OPTIONS handler fixes preflight issues
- */
 const corsOptions = {
   origin: [
     "https://chica-groom.vercel.app",
@@ -20,15 +16,14 @@ const corsOptions = {
     "http://localhost:5174",
     "http://localhost:3000",
   ],
-  credentials: false, // IMPORTANT: keep false unless you truly use cookies
+  credentials: false, // cookie не используешь — значит false
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions)); // Preflight for all routes
+app.options(/.*/, cors(corsOptions)); // ✅ вместо "*" — иначе сервер падает
 
-// Parse JSON bodies
 app.use(express.json());
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
@@ -38,9 +33,6 @@ if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
   console.error("❌ TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set in env");
 }
 
-/**
- * Helper to send message to Telegram
- */
 async function sendToTelegram(text) {
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
     throw new Error("Telegram env vars missing");
@@ -68,12 +60,10 @@ async function sendToTelegram(text) {
   return result;
 }
 
-// Health check
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
-// Booking
 app.post("/api/booking", async (req, res) => {
   try {
     const data = req.body;
@@ -103,9 +93,7 @@ New Booking from Website:
     res.status(500).json({ ok: false, message: "Serverfehler" });
   }
 });
-console.log("Route /api/booking registered");
 
-// Courses
 app.post("/api/courses", async (req, res) => {
   try {
     const data = req.body;
@@ -127,9 +115,7 @@ New Course Registration 🎓
     res.status(500).json({ ok: false, message: "Serverfehler" });
   }
 });
-console.log("Route /api/courses registered");
 
-// Franchise
 app.post("/api/franchise", async (req, res) => {
   try {
     const data = req.body;
@@ -151,9 +137,7 @@ New Franchise Inquiry 🏪
     res.status(500).json({ ok: false, message: "Serverfehler" });
   }
 });
-console.log("Route /api/franchise registered");
 
-// Practice
 app.post("/api/practice", async (req, res) => {
   try {
     const data = req.body;
@@ -175,9 +159,7 @@ New Practice Application 📖
     res.status(500).json({ ok: false, message: "Serverfehler" });
   }
 });
-console.log("Route /api/practice registered");
 
-// Workplace
 app.post("/api/workplace", async (req, res) => {
   try {
     const data = req.body;
@@ -200,9 +182,7 @@ ${data.message ? `💬 Message: ${data.message}` : ""}
     res.status(500).json({ ok: false, message: "Serverfehler" });
   }
 });
-console.log("Route /api/workplace registered");
 
-// Jobs
 app.post("/api/jobs", async (req, res) => {
   try {
     const data = req.body;
@@ -226,19 +206,13 @@ ${data.message ? `💬 Message: ${data.message}` : ""}
     res.status(500).json({ ok: false, message: "Serverfehler" });
   }
 });
-console.log("Route /api/jobs registered");
 
 /**
- * Railway: MUST listen on process.env.PORT
+ * Railway MUST use process.env.PORT
  */
-const PORT = process.env.PORT || 8080;
-const HOST = "0.0.0.0";
+const PORT = process.env.PORT;
+if (!PORT) console.error("❌ PORT is not set by Railway");
 
-app.listen(PORT, HOST, () => {
-  console.log(`✅ Server running on ${HOST}:${PORT}`);
-  console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
-  console.log(
-    `TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN ? "✓ Set" : "✗ Not set"}`
-  );
-  console.log(`TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID ? "✓ Set" : "✗ Not set"}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`✅ Server running on 0.0.0.0:${PORT}`);
 });
