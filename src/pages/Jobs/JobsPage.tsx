@@ -122,14 +122,9 @@ const JobsPage = () => {
 
       if (response.ok) {
         setIsSubmitted(true);
-      } else {
-        alert(
-          "Fehler beim Senden der Bewerbung. Bitte versuchen Sie es erneut."
-        );
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Fehler beim Senden der Bewerbung. Bitte versuchen Sie es erneut.");
     }
   };
 

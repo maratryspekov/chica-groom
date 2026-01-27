@@ -125,14 +125,10 @@ function CoursesPage() {
     try {
       await postJSON(API_ENDPOINTS.COURSES, courseBookingData);
 
-      alert(
-        "Ihre Anmeldung wurde erfolgreich gesendet! Wir werden uns bald bei Ihnen melden."
-      );
       form.reset();
       setIsSubmitted(true);
     } catch (error) {
       console.error("Error submitting course registration:", error);
-      alert("Fehler beim Senden der Anmeldung. Bitte versuchen Sie es erneut.");
     } finally {
       setIsSubmitting(false);
     }

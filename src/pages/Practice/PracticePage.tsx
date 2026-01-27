@@ -114,7 +114,6 @@ function PracticePage() {
       setIsSubmitted(true);
     } catch (error) {
       console.error("Netzwerkfehler:", error);
-      alert("Fehler beim Senden der Anmeldung. Bitte versuchen Sie es erneut.");
     } finally {
       setIsSubmitting(false);
     }
