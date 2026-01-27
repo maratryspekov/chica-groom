@@ -210,9 +210,7 @@ ${data.message ? `💬 Message: ${data.message}` : ""}
 /**
  * Railway MUST use process.env.PORT
  */
-const PORT = process.env.PORT;
-if (!PORT) console.error("❌ PORT is not set by Railway");
-
+const PORT = 3000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`✅ Server running on 0.0.0.0:${PORT}`);
 });
