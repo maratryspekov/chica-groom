@@ -110,7 +110,8 @@
     min-height: 280px;
     padding: 24px 16px 160px;
     border-radius: 24px;
-    background-size: 220px auto;
+    background-size: contain;
+    background-position: center bottom;
   }
 
   .instagram-card__content-title {
