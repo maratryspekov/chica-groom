@@ -1,0 +1,42 @@
+@use "../../styles/variables" as *;
+
+.button {
+  border-radius: $border-radius-button;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color $transition-duration ease,
+    color $transition-duration ease, box-shadow $transition-duration ease;
+}
+
+// sizes
+.button--md {
+  padding: 10px 24px;
+  font-size: $font-size-sm;
+}
+
+.button--sm {
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+// variants
+.button--primary {
+  background-color: $color-beige;
+  color: $color-grey;
+  box-shadow: $shadow-button;
+
+  &:hover {
+    background-color: $color-beige-dark;
+  }
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: $color-grey-dark;
+  border: 1px solid $color-grey-dark;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "header": {
+    "services": "Services",
+    "prices": "Prices",
+    "booking": "Book Appointment",
+    "workplace": "Rent Workplace",
+    "aboutUs": "About Us",
+    "education": "Education",
+    "courses": "Grooming Courses",
+    "practice": "Practice",
+    "franchise": "Franchise",
+    "jobs": "Jobs",
+    "phone": "+49 152 02433344"
+  },
+  "hero": {
+    "title": "Dog Grooming Salon in Berlin",
+    "subtitle": "We are chosen for our love of what we do",
+    "buttonBooking": "BOOK NOW",
+    "buttonPrices": "PRICES"
+  },
+  "opportunities": {
+    "title": "More with Chica Groom",
+    "courses": {
+      "title": "Grooming Course-Workshop by Chica Groom in Berlin",
+      "description": "Become a professional groomer from scratch or improve your skills in our workshop!",
+      "cta": "LEARN MORE"
+    },
+    "franchise": {
+      "title": "Open Your Own Chica Groom Salon",
+      "description": "Turnkey franchise: brand, support, marketing, and first clients in the first months. Start a profitable grooming business - it's easy with us.",
+      "cta": "LEARN MORE"
+    },
+    "jobs": {
+      "title": "Join the Chica Groom Team",
+      "description": "Dream job in a cozy grooming salon: stable workload, friendly team. We are looking for talented groomers and assistants who love animals and their profession. Chica Groom — it's not just a job, it's a community.",
+      "cta": "LEARN MORE"
+    },
+    "workplace": {
+      "title": "Dog Groomer Workplace Rental",
+      "description": "The ideal solution for independent dog groomers who want to work in the comfort of a professional salon in Berlin.",
+      "cta": "LEARN MORE"
+    }
+  },
+  "footer": {
+    "phone": "+49 152 02433344",
+    "email": "chicagroom@gmail.com",
+    "address": "Raumerstraße 30, 10437 Berlin, Germany",
+    "schedule": {
+      "title": "Opening Hours",
+      "monday": "Monday - Closed",
+      "tuesday": "Tuesday - 10:00 to 19:00",
+      "wednesday": "Wednesday - 10:00 to 19:00",
+      "thursday": "Thursday - 10:00 to 19:00",
+      "friday": "Friday - 10:00 to 19:00",
+      "saturday": "Saturday - 10:00 to 19:00",
+      "sunday": "Sunday - Closed"
+    }
+  },
+  "common": {
+    "learnMore": "LEARN MORE",
+    "bookNow": "BOOK NOW",
+    "submit": "SUBMIT",
+    "close": "Close"
+  },
+  "bookingForm": {
+    "email": "Email",
+    "phone": "Phone",
+    "ownerName": "Owner's Name",
+    "dogName": "Dog's Name",
+    "dogBreed": "Dog's Breed",
+    "dogWeight": "Dog's Weight",
+    "dogAge": "Dog's Age",
+    "packageTitle": "Desired Package",
+    "packageTip": "Please select one of the packages",
+    "privacyConsent": "I agree to the privacy policy.",
+    "submitButton": "Book Now",
+    "successMessage": "Thank you! We have received your request and will contact you as soon as possible.",
+    "privacyNote": "By clicking the button, you consent to the processing of your personal data and agree to the",
+    "privacyLink": "Privacy Policy",
+    "privacyNoteSuffix": "."
+  },
+  "benefits": {
+    "title": "Why Chica Groom?",
+    "quality": "We take responsibility for the quality",
+    "atmosphere": "Pleasant atmosphere where your pet feels comfortable and calm",
+    "procedures": "All procedures are performed without anesthesia",
+    "cosmetics": "We use professional TopDog cosmetics according to the coat type"
+  },
+  "aboutUs": {
+    "description": "Welcome to the grooming salon \"CHICA GROOM\" in Berlin! We offer high-quality grooming services for your pets in a luxurious and calm environment. Our experienced staff specializes in a wide range of services for pets of all breeds and sizes. \"CHICA GROOM\" was developed with special attention to the comfort and safety of your pet. We strive to create a cozy atmosphere with soft colors, calming music and ergonomic design so that your beloved feels at home."
+  },
+  "prices": {
+    "title": "Prices",
+    "subtitle": "Choose the right package for your dog",
+    "washing": "Washing",
+    "drying": "Drying",
+    "brushing": "Brushing",
+    "eyeCare": "Eye Care",
+    "earCare": "Ear Care",
+    "clawCare": "Claw Care",
+    "haircut": "Haircut",
+    "dentalCleaning": "Dental Cleaning",
+    "spa": "Spa Treatments",
+    "included": "Included",
+    "notIncluded": "Not Included:",
+    "easyDuration": "(1-2 Hours)",
+    "groomDuration": "(2-4 Hours)",
+    "spaDuration": "(2-4 Hours)",
+    "easyPrice": "From 59 Euro",
+    "groomPrice": "From 79 Euro",
+    "spaPrice": "From 99 Euro",
+    "weightUpTo2": "Up to 2 kg",
+    "weight2to5": "2-5 kg",
+    "weight5to10": "5-10 kg",
+    "weight10to20": "10-20 kg",
+    "weight20to30": "20-30 kg",
+    "priceFrom59": "from 59 Euro",
+    "priceFrom79": "from 79 Euro",
+    "priceFrom89": "from 89 Euro",
+    "priceFrom99": "from 99 Euro",
+    "priceFrom109": "from 109 Euro",
+    "priceFrom119": "from 119 Euro",
+    "priceFrom129": "from 129 Euro",
+    "priceFrom149": "from 149 Euro",
+    "priceFrom159": "from 159 Euro",
+    "priceFrom179": "from 179 Euro",
+    "priceFrom209": "from 209 Euro",
+    "note": "*Final costs depend on weight, breed, coat condition, and groomer selection, and will be determined at our salon after examining your dog.",
+    "bookButton": "Book Now",
+    "infoText1": "We offer a full spectrum of services, including haircuts, bathing, hygienic care, and much more. Our specialists guarantee individual and high-quality care for your pet, so they always look and feel their best.",
+    "infoText2": "Don't delay caring for your pet – visit \"CHICA GROOM\" today and give your beloved the care and attention they deserve.",
+    "altDogAfter": "Dog after grooming",
+    "altProcess": "Groomer cutting hair",
+    "altGroomer": "Groomer with certificate"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "review1": "We didn't recognize our dog! Thanks to your skills, our dog has transformed into a true beauty!",
+    "author1": "Elena",
+    "review2": "Thanks to the master for our handsome boy! The first salon where our beloved behaved calmly. You can immediately feel the master's professionalism.",
+    "author2": "Maxim",
+    "review3": "Excellent cut and loving treatment! Our dog looks and feels great after visiting your salon",
+    "author3": "Anna",
+    "altImage": "Dog before and after grooming – Review from",
+    "prevButton": "Previous review",
+    "nextButton": "Next review",
+    "dotLabel": "Review",
+    "googleButton": "TESTIMONIALS GOOGLE MAPS"
+  },
+  "bookingSection": {
+    "title": "BOOK NOW",
+    "description": "Fill out the form briefly, and we will contact you to confirm your appointment."
+  },
+  "instagram": {
+    "title": "Our Instagram",
+    "description": "Promotions and special offers",
+    "link": "Go to Instagram"
+  },
+  "beforeAfter": {
+    "altBefore": "Dog before grooming",
+    "altAfter": "Dog after grooming"
+  },
+  "footer": {
+    "email": "chicagroom@gmail.com",
+    "phone": "+49 152 02433344",
+    "hours1": "Tue-Sat 10:00-19:00",
+    "hours2": "Sun-Mon closed",
+    "instagramAlt": "Chica Groom Instagram",
+    "address": "Raumerstraße 30, 10437 Berlin",
+    "visaAlt": "Visa payment icon",
+    "mastercardAlt": "Mastercard payment icon",
+    "maestroAlt": "Maestro payment icon",
+    "copyright": "© 2025 Chica Groom",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy Policy"
+  },
+  "coursesPage": {
+    "pageTitle": "Grooming Courses by Chica Groom in Berlin",
+    "faqTitle": "Frequently Asked Questions",
+    "modalTitle": "Registration",
+    "modalTitleSuccess": "Successfully Sent!",
+    "successIcon": "✓",
+    "successTitle": "Thank you for your registration!",
+    "successText": "Your request has been successfully submitted. We will contact you shortly.",
+    "closeButton": "Close",
+    "formName": "Name",
+    "formNamePlaceholder": "Enter your full name",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "example@email.com",
+    "formPhone": "Phone",
+    "formPhonePlaceholder": "+49 123 456 7890",
+    "formCourseSelect": "Select Course",
+    "formPrivacyConsent": "I agree to the privacy policy and consent to the storage of my data for processing my request.",
+    "formSubmit": "Register",
+    "formSubmitting": "Sending...",
+    "basicCourse": {
+      "title": "Basic Course",
+      "subtitle": "(40 hours offline)",
+      "currentPrice": 2200,
+      "oldPrice": 2900,
+      "groupInfo": "(Group up to 6 people)",
+      "features": [
+        "Theoretical block",
+        "Hand position and scissors handling",
+        "Practice on training mannequins",
+        "Practical course: Spitz",
+        "Practical course: Yorkie/Maltipoo/Maltese",
+        "Practical course: Poodle"
+      ],
+      "extras": [
+        "Certificate of participation",
+        "Gift: Scissors, comb, clipper",
+        "Didactic handbook",
+        "Free practice training"
+      ],
+      "schedule": "Once a week – 5 weeks",
+      "description": "This workshop is perfect for beginners who want to learn basic skills in working with different dog breeds.",
+      "buttonLabel": "REGISTER"
+    },
+    "proCourse": {
+      "title": "Pro Grooming Course",
+      "subtitle": "(80 hours offline)",
+      "currentPrice": 3900,
+      "oldPrice": 5800,
+      "groupInfo": "(Group up to 6 people)",
+      "features": [
+        "Theoretical block",
+        "Hand position and scissors handling",
+        "Practice on training mannequins",
+        "Practical course: Spitz",
+        "Practical course: Yorkie/Maltipoo/Maltese",
+        "Practical course: Poodle",
+        "Practical course: Express brushing",
+        "Practical course: Breed of your choice"
+      ],
+      "extras": [
+        "Certificate of participation",
+        "Gift: Scissors, comb, clipper",
+        "Didactic handbook",
+        "Free practice training"
+      ],
+      "schedule": "Twice a week - 5 weeks",
+      "description": "This course is aimed at beginners who want to dive deeper into the world of grooming and learn practical techniques for working with different dog breeds step by step.",
+      "buttonLabel": "REGISTER"
+    },
+    "faq": [
+      {
+        "id": "target-group",
+        "question": "Who are the grooming courses suitable for?",
+        "answer": "Our courses are ideal for everyone who wants to learn grooming as a new profession or already works in pet care and wants to expand their skills – as well as dog owners who want to learn how to properly care for their own animals. Both absolute beginners and experienced groomers are welcome."
+      },
+      {
+        "id": "what-makes-unique",
+        "question": "What makes your grooming courses unique?",
+        "answer": "We work with a structured curriculum, provide a complete set of tools and training materials, combine training mannequins with real dogs in a comfortable environment, and award certificates of participation. Additionally, you receive 24/7 support from our groomers for one year."
+      },
+      {
+        "id": "offline-how-it-works",
+        "question": "How does the offline course work?",
+        "answer": "The next group starts on April 6, 2026. The basic course includes 40 hours (once a week on weekdays over 5 weeks), the Pro Grooming Course 80 hours (twice a week on weekdays over 5 weeks). Course times can be individually adjusted. No prior experience is necessary – we start from scratch."
+      },
+      {
+        "id": "offline-whats-included",
+        "question": "What is included in the price of the offline course?",
+        "answer": "The course price includes a complete tool set (scissors, combs, apron, clipper with attachments), training materials, a practice mannequin, practical training in the salon, and a certificate of participation."
+      },
+      {
+        "id": "offline-language-location",
+        "question": "In which language is the offline course held and where is it?",
+        "answer": "The main language is English. Upon request, the course can also be accompanied in Ukrainian or Russian. Classes take place at Chica Groom salon, Raumerstraße 30, 10437 Berlin."
+      },
+      {
+        "id": "offline-after-course",
+        "question": "Can I groom dogs after the offline course and continue practicing?",
+        "answer": "Yes, you will acquire all the basic skills to safely groom dogs. We recommend an intensive practice phase after the course to solidify technique and safety. For this, we offer up to 3 months of free practice in our salon – you choose the times yourself."
+      },
+      {
+        "id": "online-how-it-works",
+        "question": "How does the online course work?",
+        "answer": "The online course starts immediately after registration. Our manager will send you payment information, the tool set, all training materials, and access to video lessons. You learn at your own pace, completely flexible."
+      },
+      {
+        "id": "online-whats-included",
+        "question": "What is included in the price of the online course?",
+        "answer": "The price includes video lessons, a complete tool set (scissors, combs, apron, clipper with attachments), training materials, a practice mannequin, and a certificate of participation. Here too: no prior experience necessary."
+      },
+      {
+        "id": "online-language",
+        "question": "In which language is the online course?",
+        "answer": "The video lessons are in English, with Russian or German subtitles. This way you can learn in the language that is most convenient for you."
+      },
+      {
+        "id": "practice-techniques",
+        "question": "What practice and techniques do I learn in the course?",
+        "answer": "You learn clipper and scissor cuts, hygiene grooming, coat care, and working with different breeds. The course involves working with practice mannequins and real dogs. There are demonstrations on models and cutting diagrams for orientation."
+      },
+      {
+        "id": "breeds-group-size-tools",
+        "question": "Which breeds do I work with, how large are the groups, and do I need to bring tools?",
+        "answer": "We work with Poodles, Spitz, Yorkies, Maltipoos, Maltese, and other breeds. The offline group size is a maximum of 6 people, so everyone gets adequate attention. All necessary tools are provided – you don't need to bring anything of your own."
+      },
+      {
+        "id": "legal-certificate",
+        "question": "Do I need an official diploma or license as a groomer in Germany and what certificate do I get?",
+        "answer": "The profession of pet groomer is not subject to licensing in Germany. For work, practice, experience, and safe handling of animals are most important. You will receive a certificate of participation from Chica Groom, which confirms your skills, but does not replace a state-recognized diploma. The course is a practical introductory format and not an official training program."
+      },
+      {
+        "id": "career-support",
+        "question": "Can I work as a groomer after the course and do you support job searches?",
+        "answer": "Yes, the course provides practical skills for starting work with clients or in a salon. We don't guarantee employment, but support with advice, practice tips, and often collaborations with salons emerge – many graduates already work independently or in teams."
+      },
+      {
+        "id": "masterclasses",
+        "question": "Are there additional masterclasses for specific breeds?",
+        "answer": "Yes, we offer individual and group masterclasses for different breeds. You can register in advance via WhatsApp. The price for a masterclass is 390 € plus 19% VAT."
+      },
+      {
+        "id": "payment",
+        "question": "How does payment work and is installment payment possible?",
+        "answer": "Yes, installment payment is possible: 50% before the course starts and 50% on the last course day. For the online course, payment is made in full at the beginning. You can pay by credit card, bank transfer, or invoice."
+      },
+      {
+        "id": "how-to-apply",
+        "question": "How do I register for the course?",
+        "answer": "You can apply through the form on our website or contact us directly via WhatsApp at +49 152 02433344. We are happy to advise you and help you choose the right format."
+      }
+    ]
+  },
+  "practicePage": {
+    "heroTitle": "Practice at Chica Groom",
+    "heroSubtitle": "Live Practice. Real Dogs. Real Experience.",
+    "heroDescription1": "Want to immerse yourself in the atmosphere of a real grooming salon? Practice days at Chica Groom offer the opportunity to watch professional dog groomers at work, ask questions, and participate in real salon procedures.",
+    "heroDescription2": "Suitable for beginners and those who want to try their hand at dog grooming after acquiring basic knowledge.",
+    "includedTitle": "Included:",
+    "importantNote": "IMPORTANT:",
+    "importantText": "This is not official training, but voluntary practice days under the supervision of professional groomers.",
+    "startPackage": {
+      "title": "START PACKAGE",
+      "duration": "5 Days",
+      "price": "250 €",
+      "subtitle": "Ideal for anyone who is just interested in the profession of dog groomer and wants to find out if it is the right field for them.",
+      "included": [
+        "Observation of the master's work",
+        "Introduction to grooming etiquette and basic principles",
+        "Mini-internship: brushing, washing and drying dogs, haircuts",
+        "Recommendations for the next step"
+      ],
+      "buttonLabel": "SUBMIT AN APPLICATION"
+    },
+    "experiencePackage": {
+      "title": "EXPERIENCE PACKAGE",
+      "duration": "20 Days",
+      "price": "700 €",
+      "subtitle": "This package is suitable for those who want to delve deeper into grooming and try elements of haircutting under the supervision of a master.",
+      "included": [
+        "Introduction to the tools",
+        "Assisting masters in their daily work",
+        "Participation in basic procedures: preparation, combing, washing, drying",
+        "First independent steps: working with machine and scissors",
+        "Feedback from mentors"
+      ],
+      "buttonLabel": "SUBMIT AN APPLICATION"
+    },
+    "intensivePackage": {
+      "title": "INTENSIVE PACKAGE",
+      "duration": "40 Days",
+      "price": "1400 €",
+      "subtitle": "A full-fledged practice marathon that comes as close as possible to the real work of a groomer. You spend 8 weeks in the salon and can try your hand at a variety of tasks.",
+      "included": [
+        "Intensive work with masters",
+        "Opportunity to practice independently on models",
+        "Practicing haircutting elements under the guidance of a groomer",
+        "In-depth understanding of caring for different coat types",
+        "Support in choosing equipment and advice on starting a career"
+      ],
+      "buttonLabel": "SUBMIT AN APPLICATION"
+    },
+    "modalTitle": "Application",
+    "modalTitleSuccess": "Successfully Submitted!",
+    "formName": "Name *",
+    "formNamePlaceholder": "Enter your full name",
+    "formEmail": "E-Mail *",
+    "formEmailPlaceholder": "example@email.com",
+    "formPhone": "Phone *",
+    "formPhonePlaceholder": "+49 123 456 7890",
+    "formPackage": "Select Package *",
+    "formPrivacyConsent": "I agree to the privacy policy and consent to my data being stored to process my request. *",
+    "formSubmit": "Register",
+    "formSubmitting": "Sending...",
+    "successTitle": "Thank you for your application!",
+    "successText": "Your request has been successfully submitted. We will contact you shortly.",
+    "successButton": "Close"
+  },
+  "jobsPage": {
+    "heroTitle": "Welcome to the Team!",
+    "heroSubtitle": "Chica Groom in Berlin",
+    "positionAvailable": "Position Available",
+    "requirements": "Requirements:",
+    "responsibilities": "Responsibilities:",
+    "weOffer": "We Offer:",
+    "ctaText": "Want to become part of the team?",
+    "ctaSubtext": "Leave an application and we will contact you",
+    "applyButton": "Send Application",
+    "groomer": {
+      "position": "Groomer",
+      "requirements": [
+        "Professional experience from 1 year",
+        "Professionalism, love for animals",
+        "Basic communication skills with clients"
+      ],
+      "benefits": [
+        "✓ Official employment",
+        "✓ High salary",
+        "✓ Friendly team and pleasant conditions",
+        "✓ Constant flow of clients"
+      ]
+    },
+    "cleaner": {
+      "position": "Cleaner",
+      "requirements": [
+        "Responsibility and punctuality",
+        "Accuracy and attention to detail"
+      ],
+      "benefits": [
+        "✓ Official employment",
+        "✓ Stable schedule",
+        "✓ Cozy work atmosphere"
+      ]
+    },
+    "verwalter": {
+      "position": "Administrator",
+      "requirements": [
+        "Friendliness, responsibility, presentable appearance",
+        "Good knowledge of German or English"
+      ],
+      "responsibilities": [
+        "✓ Receiving and accompanying clients and their pets",
+        "✓ Taking photo and video content",
+        "✓ Control of cleanliness and order in the salon",
+        "✓ Counting clients and keeping records"
+      ]
+    },
+    "modalTitle": "Send Application",
+    "formName": "Name *",
+    "formEmail": "E-Mail *",
+    "formPhone": "Phone *",
+    "formPosition": "Position *",
+    "formExperience": "Work Experience *",
+    "formExperiencePlaceholder": "e.g. 2 years",
+    "formPrivacyConsent": "I agree to the processing of my personal data in accordance with the privacy policy *",
+    "formSubmit": "Submit Application",
+    "successTitle": "Thank you for your application!",
+    "successText": "We have received your application and will contact you shortly.",
+    "successButton": "Close"
+  },
+  "workplaceRentalPage": {
+    "heroTitle": "Rent a Workplace at Chica Groom",
+    "heroSubtitle": "Rent a workplace for a groomer. Space, table, equipment and basic cosmetics.",
+    "heroDescription": "The ideal solution for self-employed groomers who want to work in the comfort of a professional salon in Berlin. You get a fully equipped space with a professional table, bathtub, hair dryer, compressor and basic supplies.",
+    "imageAlt1": "Workplace at Chica Groom",
+    "imageAlt2": "Grooming Cosmetics",
+    "included": "Included:",
+    "applyButton": "Submit an Application",
+    "importantNote": "Important:",
+    "importantText": "Minimum rental period: 3 months (for students: 6 months). Deposit: 2 months rent (for students: 1 month rent). Cleaning and VAT not included.",
+    "starterPackage": {
+      "title": "Starter Package",
+      "price": "640 € / Month",
+      "pricePerHour": "1 hour - 25 €",
+      "description": "Ideal for dog groomers who need to work one full day per week in a professional environment.",
+      "features": [
+        "Professional workplace rental 1 day per week",
+        "Use of salon equipment (table, bathtub, hair dryer, compressor)",
+        "Basic grooming cosmetics",
+        "Utilities",
+        "Support from the Chica Groom team"
+      ]
+    },
+    "optimalPackage": {
+      "title": "Optimal Package",
+      "price": "1150 € / Month",
+      "pricePerHour": "1 hour - 22 €",
+      "description": "Ideal for those who work full 2 days a week and want to optimize their costs.",
+      "features": [
+        "Professional workplace rental 2 days per week",
+        "Use of salon equipment",
+        "Basic grooming cosmetics",
+        "Utilities",
+        "Support from the Chica Groom team"
+      ]
+    },
+    "professionalPackage": {
+      "title": "Professional Package",
+      "price": "1600 € / Month",
+      "pricePerHour": "1 hour - 20 €",
+      "description": "For professionals who need a permanent workplace for intensive work 3 days a week.",
+      "features": [
+        "Professional workplace rental 3 days per week",
+        "Complete furnishing and equipment",
+        "All basic cosmetics",
+        "Utilities",
+        "Full support from the Chica Groom team"
+      ]
+    },
+    "modalTitle": "Application for",
+    "formName": "Name *",
+    "formEmail": "E-Mail *",
+    "formPhone": "Phone *",
+    "formPackage": "Package *",
+    "formPackagePlaceholder": "Select package",
+    "formPrivacyConsent": "I agree to the processing of my personal data in accordance with the privacy policy *",
+    "formSubmit": "Send Request",
+    "successTitle": "Thank you for your request!",
+    "successText": "We have received your application and will contact you shortly.",
+    "successButton": "Close"
+  }
+}

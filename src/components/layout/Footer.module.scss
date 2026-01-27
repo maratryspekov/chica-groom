@@ -1,0 +1,131 @@
+@use "../../styles/variables" as *;
+
+.footer {
+  background-color: $color-beige;
+  color: $color-grey-dark;
+  width: 100%;
+
+  /* top */
+  &__top {
+    padding: 32px 0 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__email {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  &__phone {
+    font-size: $font-size-base;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &__hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0;
+
+    font-weight: 400;
+    font-size: $font-size-sm;
+  }
+
+  &__hours-item + &__hours-item {
+    margin-top: 2px;
+  }
+
+  &__social {
+    margin-top: 8px;
+  }
+
+  &__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__address {
+    margin-top: 4px;
+    font-style: normal;
+  }
+
+  &__address-link {
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  &__rating {
+    margin-top: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    font-size: $font-size-base;
+    text-decoration: none;
+  }
+
+  &__stars {
+    letter-spacing: 2px;
+  }
+
+  &__payments {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__payment {
+    height: 20px;
+  }
+
+  /* bottom */
+  &__bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 8px 0 24px;
+    text-align: center;
+    font-size: $font-size-sm;
+  }
+
+  &__bottom-text {
+    margin: 0;
+  }
+
+  &__bottom-link {
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* responsive  */
+  @media (max-width: $bp-tablet) {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    &__left,
+    &__right {
+      align-items: center;
+    }
+  }
+}

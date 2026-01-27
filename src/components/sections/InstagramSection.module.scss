@@ -1,0 +1,119 @@
+@use "../../styles/variables" as *;
+
+.instagram-card {
+  margin: 50px 0 80px;
+  min-height: 400px; // instead of huge paddings
+  border-radius: 40px;
+
+  // background with dog covering the whole card
+  background-image: url("../../assets/images/image-background.webp");
+  background-repeat: no-repeat;
+  background-position: left center; // dog on the left
+  background-size: cover; // instead of contain
+
+  // white fallback background, but won't be visible now
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: flex-end; // text on the right
+  align-items: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  padding: 40px; // much more reasonable padding
+}
+
+// Content on the right
+.instagram-card__content {
+  max-width: 420px;
+  margin-right: 120px; // replaces right padding
+  text-align: left;
+}
+
+.instagram-card__content-title {
+  margin: 0 0 12px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.instagram-card__content-description {
+  margin: 0 0 32px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+/* link button */
+.instagram-card__content-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 40px;
+  border-radius: 999px;
+  background: #f5478a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 12px 25px rgba(245, 71, 138, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.instagram-card__content-link:hover {
+  background: #e33c7d;
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(245, 71, 138, 0.45);
+}
+
+.instagram-card__content-link:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(245, 71, 138, 0.35);
+}
+
+// Responsive: tablets
+@media (max-width: 900px) {
+  .instagram-card {
+    min-height: 320px;
+    padding: 32px 24px 180px; // bottom padding for dog image
+    border-radius: 32px;
+    justify-content: center;
+    background-position: center bottom;
+    background-size: 260px auto; // dog size on smaller screens
+  }
+
+  .instagram-card__content {
+    text-align: center;
+    max-width: 100%;
+    margin-right: 0; // reset margin on mobile
+  }
+
+  .instagram-card__content-title {
+    font-size: 28px;
+  }
+
+  .instagram-card__content-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .instagram-card__content-link {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+// Responsive: mobile
+@media (max-width: 600px) {
+  .instagram-card {
+    margin: 48px 0 64px;
+    min-height: 280px;
+    padding: 24px 16px 160px;
+    border-radius: 24px;
+    background-size: 220px auto;
+  }
+
+  .instagram-card__content-title {
+    font-size: 24px;
+  }
+}

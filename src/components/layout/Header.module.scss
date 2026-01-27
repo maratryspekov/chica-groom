@@ -1,0 +1,446 @@
+@use "../../styles/variables" as *;
+
+.header {
+  background-color: $color-white-bg;
+  box-shadow: $shadow-soft;
+  width: 100%;
+  padding: 12px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: auto;
+    height: 74px;
+  }
+
+  // Hide phone and lang switcher in left section on desktop
+  &__left &__phone,
+  &__left &__lang-switcher {
+    display: none;
+  }
+
+  &__nav {
+    flex: 1;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    color: $color-grey-dark;
+    font-size: $font-size-menu;
+    line-height: 1.2;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color $transition-duration ease;
+
+    &:hover {
+      color: $color-light-brown;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    white-space: nowrap;
+  }
+
+  &__book {
+    padding: 10px 24px;
+    color: $color-grey;
+    background-color: $color-beige;
+    border-radius: $border-radius-button;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: $shadow-button;
+    transition: background-color $transition-duration ease,
+      transform $transition-fast ease, box-shadow $transition-fast ease;
+
+    &:hover {
+      background-color: $color-beige-dark;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__phone {
+    font-size: $font-size-base;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-black;
+    white-space: nowrap;
+  }
+
+  &__lang-switcher {
+    display: flex;
+    gap: 8px;
+  }
+
+  // Hide mobile language switcher on desktop
+  &__mobile-lang {
+    display: none;
+  }
+
+  &__hamburger {
+    display: none; // Hide hamburger on desktop
+  }
+
+  &__lang {
+    min-width: 40px;
+    padding: 6px 12px;
+    border-radius: $radius-pill;
+    border: 1px solid $color-border-light;
+    background-color: $color-white;
+    font-size: $font-size-sm;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color $transition-duration ease,
+      color $transition-duration ease, border-color $transition-duration ease;
+  }
+
+  &__lang--active {
+    background-color: $color-beige;
+    border-color: $color-beige;
+    color: $color-grey-dark;
+  }
+
+  // Dropdown menu styles
+  &__dropdown-trigger {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    padding: 8px 0;
+    background: $color-white;
+    border: 1px solid $color-border-light;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: 180px;
+    z-index: 100;
+    animation: fadeInDown 0.2s ease;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      padding: 10px 20px;
+      color: $color-grey-dark;
+      text-decoration: none;
+      font-size: $font-size-base;
+      transition: background-color $transition-duration ease,
+        color $transition-duration ease;
+
+      &:hover {
+        background-color: $color-beige;
+        color: $color-grey-dark;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Hamburger menu button (hidden by default)
+.header__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 1001;
+
+  &-line {
+    width: 24px;
+    height: 2px;
+    background-color: $color-grey-dark;
+    transition: all 0.3s ease;
+  }
+}
+
+// Tablet adaptation
+@media (max-width: $bp-tablet) {
+  .header__container {
+    gap: 16px;
+  }
+
+  .header__list {
+    gap: 16px;
+  }
+
+  .header__item {
+    font-size: $font-size-sm;
+  }
+
+  .header__logo {
+    height: 48px;
+  }
+
+  .header__right {
+    gap: 12px;
+  }
+
+  .header__book {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+
+  .header__phone {
+    display: none; // Hide phone on tablet
+  }
+}
+
+// Mobile adaptation
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 0;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .header__left {
+    flex: 0 0 auto;
+  }
+
+  .header__logo {
+    height: 40px;
+  }
+
+  // Mobile language switcher (centered between logo and hamburger)
+  .header__mobile-lang {
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header__lang {
+    min-width: 36px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  // Hide desktop right section (phone + languages)
+  .header__right {
+    display: none;
+  }
+
+  // Hamburger button with circular beige background
+  .header__hamburger {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $color-beige;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1001;
+
+    &:hover {
+      background-color: $color-beige-dark;
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+  }
+
+  // Hamburger lines
+  .header__hamburger-line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $color-grey-dark;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:nth-child(1) {
+      top: 18px;
+    }
+
+    &:nth-child(2) {
+      top: 23px;
+    }
+
+    &:nth-child(3) {
+      top: 28px;
+    }
+  }
+
+  // Animate hamburger to X when open
+  .header__hamburger--open {
+    .header__hamburger-line {
+      &:nth-child(1) {
+        top: 23px;
+        transform: translateX(-50%) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 23px;
+        transform: translateX(-50%) rotate(-45deg);
+      }
+    }
+  }
+
+  // Overlay to dim background
+  .header__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  // Mobile navigation
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: $color-beige;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+
+    &--open {
+      right: 0;
+    }
+  }
+
+  .header__list {
+    flex-direction: column;
+    gap: 0;
+    padding: 80px 20px 20px;
+  }
+
+  .header__item {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: $font-size-base;
+    color: $color-grey-dark;
+
+    &:hover {
+      color: $color-brown-dark;
+    }
+  }
+
+  .header__dropdown-trigger {
+    cursor: pointer;
+  }
+
+  .header__dropdown {
+    position: static;
+    margin-top: 12px;
+    margin-left: 20px;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid $color-beige-dark;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation: none;
+
+    a {
+      color: $color-grey-dark;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: $color-brown-dark;
+      }
+    }
+  }
+
+  // Hide hamburger when modal is open
+  :global(body.modal-open) .header__hamburger {
+    display: none;
+  }
+}
+
+// Hide hamburger when modal is open
+:global(body.modal-open) {
+  .header__hamburger {
+    display: none;
+  }
+}

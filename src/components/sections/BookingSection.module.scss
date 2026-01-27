@@ -1,0 +1,55 @@
+@use "../../styles/variables" as *;
+
+.booking {
+  padding: 64px 0 80px;
+  background-color: $color-beige;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 0 auto;
+    max-width: 640px;
+    font-size: $font-size-base;
+    line-height: 1.6;
+    color: $color-brown-dark;
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .booking {
+    padding: 48px 0 64px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__description {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .booking {
+    padding: 40px 0 56px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
+}

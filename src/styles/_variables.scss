@@ -1,0 +1,50 @@
+// ===== Colors =====
+$color-white: #ffffff;
+$color-white-bg: #f8f8f8;
+
+$color-black: #000000;
+
+$color-beige: #fcdfb1; // main beige color for buttons and stuff
+$color-beige-dark: #f5b96a; // darker beige for hover state
+
+$color-light-brown: #b47b44; // hover color for menu items
+$color-brown-dark: #615849; // Pice cards collor
+
+$color-grey: #5d5d5d;
+$color-grey-dark: #333333;
+$color-grey-light: #d9e3e9;
+
+$color-border-light: #d7d7d7;
+$color-pink-bg: #fcdfea;
+$brand-pink: #f5478a; // Brand pink color for buttons and accents
+
+$color-gold: #f5b300;
+
+// ===== Typography =====
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-menu: 17px;
+
+// fonts
+$font-family-base: "Nunito", system-ui, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", sans-serif;
+$font-family-heading: $font-family-base;
+
+// ===== Transitions =====
+$transition-duration: 0.2s;
+$transition-fast: 0.1s;
+
+// ===== Radius =====
+$border-radius-button: 35px; // for the Book button
+$radius-pill: 999px; // small pill-shaped elements
+
+// ===== Shadows =====
+$shadow-soft: 0 2px 4px rgba(0, 0, 0, 0.04); // for header shadow
+$shadow-button: 0 2px 4px rgba(0, 0, 0, 0.08); // for Book button shadow
+
+// ===== Layout =====
+$container-max-width: 1400px;
+
+// ===== Breakpoints =====
+$bp-tablet: 1024px; // if already exists - don't duplicate
+$bp-mobile: 575px; // mobile breakpoint, can be any value

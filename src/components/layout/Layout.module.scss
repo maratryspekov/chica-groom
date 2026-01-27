@@ -1,0 +1,50 @@
+/* src/components/layout/Layout.module.scss */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    flex: 1;
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // Hide when modal is open
+  :global(body.modal-open) & {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+
+    @media (max-width: 768px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}

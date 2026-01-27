@@ -1,0 +1,53 @@
+@use "../../styles/variables" as *;
+
+.about-us {
+  background-color: #fcdfea;
+  padding: 64px 0; // more breathing space top/bottom
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px; // space between photo and text
+  }
+
+  &__img {
+    flex: 0 0 400px;
+    max-width: 450px;
+    border-radius: 24px;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__description {
+    flex: 1;
+    max-width: 560px;
+    font-size: 24px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+  }
+}
+
+// responsive design
+@media (max-width: $bp-tablet) {
+  .about-us {
+    padding: 40px 0;
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      gap: 24px;
+    }
+
+    &__img {
+      max-width: 280px;
+    }
+
+    &__description {
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+}

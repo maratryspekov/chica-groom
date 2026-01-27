@@ -1,0 +1,173 @@
+@use "../../styles/variables" as *;
+
+.hero {
+  padding: 40px 0 0 0;
+  background-color: $color-grey-light;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    max-width: 1200px; // a bit wider, more breathing space
+    margin: 0 auto; // center the whole block inside Container
+  }
+
+  &__left {
+    flex: 0 0 55%; // left block is wider
+    max-width: 600px;
+  }
+
+  &__right {
+    flex: 1;
+    display: flex;
+    flex: 0 0 55%;
+    justify-content: flex-end;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__image {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+
+  &__stars {
+    letter-spacing: 2px;
+    color: $color-gold;
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    letter-spacing: 5px;
+  }
+
+  &__text {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: $color-grey-dark;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__button {
+    font-size: $font-size-base;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .hero {
+    padding: 32px 0;
+
+    &__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__right {
+      justify-content: center;
+    }
+
+    &__left {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 36px;
+      letter-spacing: 3px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .hero {
+    padding: 24px 0;
+
+    &__title {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__btn-wrapper {
+      flex-direction: column;
+      width: 100%;
+      gap: 12px;
+    }
+
+    &__button {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    &__image {
+      max-width: 85%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.paws {
+  background-color: $color-beige;
+  overflow: hidden;
+  padding: 8px 0;
+
+  &__track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: paws-marquee 25s linear infinite;
+  }
+
+  &__item {
+    font-size: 22px;
+    flex-shrink: 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes paws-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
