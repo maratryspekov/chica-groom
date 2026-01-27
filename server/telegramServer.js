@@ -14,16 +14,16 @@ app.use(express.json());
 // CORS configuration - allow requests from Vercel and localhost
 const corsOptions = {
   origin: [
-    'https://chica-groom.vercel.app',
-    'https://chica-groom-pixvbo5mw-marat-vodochkas-projects.vercel.app',
+    "https://chica-groom.vercel.app",
+    "https://chica-groom-pixvbo5mw-marat-vodochkas-projects.vercel.app",
     /^https:\/\/chica-groom-.*\.vercel\.app$/,
-    'http://localhost:5173',
-    'http://localhost:5174',
-    'http://localhost:3000'
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:3000",
   ],
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions));
@@ -325,6 +325,13 @@ app.post("/api/jobs", async (req, res) => {
 console.log("Route /api/jobs registered");
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`✅ Telegram server running on port ${PORT}`);
+const HOST = "0.0.0.0"; // Important for Railway
+
+app.listen(PORT, HOST, () => {
+  console.log(`✅ Telegram server running on ${HOST}:${PORT}`);
+  console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
+  console.log(
+    `TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN ? "✓ Set" : "✗ Not set"}`
+  );
+  console.log(`TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID ? "✓ Set" : "✗ Not set"}`);
 });
