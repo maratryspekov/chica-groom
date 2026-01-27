@@ -10,8 +10,23 @@ const app = express();
 
 // so we can parse JSON in request body
 app.use(express.json());
-// so frontend from different port (Vite) can make requests here
-app.use(cors());
+
+// CORS configuration - allow requests from Vercel and localhost
+const corsOptions = {
+  origin: [
+    'https://chica-groom.vercel.app',
+    'https://chica-groom-pixvbo5mw-marat-vodochkas-projects.vercel.app',
+    /^https:\/\/chica-groom-.*\.vercel\.app$/,
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'http://localhost:3000'
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+app.use(cors(corsOptions));
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
