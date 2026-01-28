@@ -1,14 +1,16 @@
+![CI](https://github.com/maratryspekov/chica-groom/actions/workflows/ci.yml/badge.svg)
+
 # 🐾 Chica Groom
 
 Modern website for a dog grooming salon in Berlin, Germany.
+
+🚀 **[Live Demo](https://chica-groom.com)** | 📧 [Contact](mailto:chicagroom@gmail.com)
 
 ![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue) ![Node.js](https://img.shields.io/badge/Node.js-22-green)
 
 ## 📝 About
 
 A full-stack web application for a dog grooming business featuring online booking, course registration, and multi-language support. Built as a portfolio project to demonstrate React, TypeScript, and Node.js skills.
-
-**Live Demo:** _(Add link when deployed)_
 
 ## 📸 Screenshots
 
@@ -39,6 +41,20 @@ A full-stack web application for a dog grooming business featuring online bookin
 - 📝 **Multiple forms** - Booking, courses, jobs, workplace rental
 - 🤖 **Telegram integration** - Real-time notifications
 - ♿ **Accessible** - ARIA labels, keyboard navigation
+
+## 🏆 Quality & Standards
+
+This project follows modern web development best practices:
+
+- ✅ **TypeScript** - Type-safe code with full type coverage
+- ✅ **ESLint** - Code quality and consistency checks
+- ✅ **SCSS Modules** - Scoped styling, no naming conflicts
+- ✅ **Responsive Design** - Mobile-first, tested on all devices
+- ✅ **Accessibility (a11y)** - WCAG compliant, keyboard navigation, ARIA labels
+- ✅ **SEO Optimized** - Semantic HTML, meta tags, proper heading structure
+- ✅ **Performance** - Lazy loading, optimized images, code splitting
+- ✅ **Clean Architecture** - Modular component structure, separation of concerns
+- ✅ **i18n Ready** - Full internationalization support with i18next
 
 ## 🛠 Tech Stack
 
