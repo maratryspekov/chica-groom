@@ -5,9 +5,15 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
 
   use: {
-    baseURL: process.env.E2E_BASE_URL || "http://localhost:5173",
+    baseURL: "http://localhost:4173",
     screenshot: "only-on-failure",
     trace: "on-first-retry",
+  },
+
+  webServer: {
+    command: process.env.CI ? "npm run preview" : "npm run dev",
+    port: process.env.CI ? 4173 : 5173,
+    reuseExistingServer: !process.env.CI,
   },
 
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],

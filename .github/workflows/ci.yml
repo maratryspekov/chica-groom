@@ -18,9 +18,8 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
+      - run: npm run build
 
-      # Playwright deps + run
+      # Playwright will start preview server automatically via webServer config
       - run: npx playwright install --with-deps
       - run: npm run test:e2e
-
-      - run: npm run build
