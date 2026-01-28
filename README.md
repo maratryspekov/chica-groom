@@ -55,6 +55,9 @@ This project follows modern web development best practices:
 - ✅ **Performance** - Lazy loading, optimized images, code splitting
 - ✅ **Clean Architecture** - Modular component structure, separation of concerns
 - ✅ **i18n Ready** - Full internationalization support with i18next
+- ✅ **CI** - GitHub Actions (lint, typecheck, e2e on push/PR)
+- ✅ **E2E Tests** - Playwright (booking form + language switch)
+- ✅ **Test Artifacts** - Screenshots/traces on failures
 
 ## 🛠 Tech Stack
 
@@ -108,12 +111,13 @@ npm install
 
 2. Setup environment variables:
 
-Create `.env` in root:
+Copy `.env.example` to `.env` and fill values:
 
-```env
-TELEGRAM_BOT_TOKEN=your_bot_token
-TELEGRAM_CHAT_ID=your_chat_id
+```bash
+cp .env.example .env
 ```
+
+Never commit `.env` files. They are ignored by `.gitignore`.
 
 3. Run development servers:
 
