@@ -1,4 +1,4 @@
-![CI](https://github.com/maratryspekov/chica-groom/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/maratryspekov/chica-groom/actions/workflows/ci.yml/badge.svg?branch=main)
 
 # 🐾 Chica Groom
 
