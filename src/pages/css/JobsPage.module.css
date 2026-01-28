@@ -1,0 +1,373 @@
+@charset "UTF-8";
+.jobs {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+.jobs__hero {
+  background: linear-gradient(135deg, #fff5f9 0%, #fff 100%);
+  padding: 80px 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .jobs__hero {
+    padding: 60px 0;
+  }
+}
+.jobs__hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .jobs__hero h1 {
+    font-size: 36px;
+  }
+}
+.jobs__subtitle {
+  font-size: 24px;
+  color: #f5478a;
+  font-weight: 600;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .jobs__subtitle {
+    font-size: 20px;
+  }
+}
+.jobs__opening {
+  padding: 80px 0;
+  background: #ffffff;
+}
+@media (max-width: 768px) {
+  .jobs__opening {
+    padding: 60px 0;
+  }
+}
+
+.jobsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .jobsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.jobCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.jobCard__header {
+  padding: 40px 32px;
+  background: linear-gradient(135deg, #f5d9b8 0%, #f0c89f 100%);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .jobCard__header {
+    padding: 32px 24px;
+  }
+}
+.jobCard__title {
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #7d5e3f;
+}
+@media (max-width: 768px) {
+  .jobCard__title {
+    font-size: 24px;
+  }
+}
+.jobCard__position {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #7d5e3f;
+}
+@media (max-width: 768px) {
+  .jobCard__position {
+    font-size: 30px;
+  }
+}
+.jobCard__body {
+  padding: 40px 48px;
+  background: #ffffff;
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .jobCard__body {
+    padding: 32px 24px;
+  }
+}
+.jobCard__section {
+  margin-bottom: 32px;
+}
+.jobCard__section:last-child {
+  margin-bottom: 0;
+}
+.jobCard__section h4 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #7d5e3f;
+}
+@media (max-width: 768px) {
+  .jobCard__section h4 {
+    font-size: 18px;
+  }
+}
+.jobCard__section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.jobCard__section ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .jobCard__section ul li {
+    font-size: 15px;
+  }
+}
+.jobCard__section ul li::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  color: #f5478a;
+  font-weight: 700;
+  font-size: 20px;
+}
+.jobCard__cta {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #f0f0f0;
+  text-align: center;
+}
+.jobCard__cta p {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7d5e3f;
+}
+@media (max-width: 768px) {
+  .jobCard__cta p {
+    font-size: 16px;
+  }
+}
+.jobCard__ctaSubtext {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #666 !important;
+  line-height: 1.5;
+}
+.jobCard__footer {
+  padding: 32px;
+  background: #ffffff;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .jobCard__footer {
+    padding: 24px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal__content {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 20px;
+    max-height: 95vh;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #5d5d5d;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+.modal__close:hover {
+  color: #f5478a;
+}
+.modal__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 12px;
+  padding-right: 32px;
+}
+@media (max-width: 768px) {
+  .modal__title {
+    font-size: 20px;
+  }
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modalForm__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.modalForm__field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+.modalForm__field input,
+.modalForm__field select {
+  padding: 10px 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+.modalForm__field input:focus,
+.modalForm__field select:focus {
+  outline: none;
+  border-color: #f5478a;
+  box-shadow: 0 0 0 3px rgba(245, 71, 138, 0.1);
+}
+.modalForm__checkboxField {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 0;
+}
+.modalForm__checkboxField input[type=checkbox] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.modalForm__checkboxField label {
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.modalForm__submit {
+  margin-top: 4px;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 20px 0;
+}
+.successMessage__icon {
+  width: 64px;
+  height: 64px;
+  background: #f5478a;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto 24px;
+  animation: scaleIn 0.4s ease;
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.successMessage h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .successMessage h2 {
+    font-size: 22px;
+  }
+}
+.successMessage p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .successMessage p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=JobsPage.module.css.map */

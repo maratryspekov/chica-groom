@@ -28,6 +28,9 @@ dist-ssr
 .env.local
 .env.development.local
 .env.production.local
+.env
+.env.*
+!.env.example
 
 # Coverage
 coverage

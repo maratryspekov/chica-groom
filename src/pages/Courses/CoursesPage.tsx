@@ -52,8 +52,8 @@ function CoursesPage() {
       id: "basic",
       title: t("coursesPage.basicCourse.title"),
       subtitle: t("coursesPage.basicCourse.subtitle"),
-      currentPrice: t("coursesPage.basicCourse.currentPrice") as any,
-      oldPrice: t("coursesPage.basicCourse.oldPrice") as any,
+      currentPrice: Number(t("coursesPage.basicCourse.currentPrice")),
+      oldPrice: Number(t("coursesPage.basicCourse.oldPrice")),
       groupInfo: t("coursesPage.basicCourse.groupInfo"),
       features: t("coursesPage.basicCourse.features", {
         returnObjects: true,
@@ -69,8 +69,8 @@ function CoursesPage() {
       id: "pro",
       title: t("coursesPage.proCourse.title"),
       subtitle: t("coursesPage.proCourse.subtitle"),
-      currentPrice: t("coursesPage.proCourse.currentPrice") as any,
-      oldPrice: t("coursesPage.proCourse.oldPrice") as any,
+      currentPrice: Number(t("coursesPage.proCourse.currentPrice")),
+      oldPrice: Number(t("coursesPage.proCourse.oldPrice")),
       groupInfo: t("coursesPage.proCourse.groupInfo"),
       features: t("coursesPage.proCourse.features", {
         returnObjects: true,

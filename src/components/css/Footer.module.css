@@ -1,0 +1,105 @@
+.footer {
+  background-color: #fcdfb1;
+  color: #333333;
+  width: 100%;
+  /* top */
+  /* bottom */
+  /* responsive  */
+}
+.footer__top {
+  padding: 32px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+.footer__left, .footer__right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__email {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.footer__phone {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer__hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer__hours-item + .footer__hours-item {
+  margin-top: 2px;
+}
+.footer__social {
+  margin-top: 8px;
+}
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social-icon {
+  width: 40px;
+  height: 40px;
+}
+.footer__address {
+  margin-top: 4px;
+  font-style: normal;
+}
+.footer__address-link {
+  font-weight: 600;
+  text-decoration: none;
+}
+.footer__rating {
+  margin-top: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer__stars {
+  letter-spacing: 2px;
+}
+.footer__payments {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer__payment {
+  height: 20px;
+}
+.footer__bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 8px 0 24px;
+  text-align: center;
+  font-size: 14px;
+}
+.footer__bottom-text {
+  margin: 0;
+}
+.footer__bottom-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+  .footer__left, .footer__right {
+    align-items: center;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

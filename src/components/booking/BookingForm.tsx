@@ -229,7 +229,10 @@ function BookingForm() {
       </Button>
 
       {isSubmitted && (
-        <p className={styles["booking-form__success"]}>
+        <p
+          className={styles["booking-form__success"]}
+          data-testid="success-message"
+        >
           {t("bookingForm.successMessage")}
         </p>
       )}

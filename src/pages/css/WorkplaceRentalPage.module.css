@@ -1,0 +1,467 @@
+.workplace {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+.workplace__hero {
+  background: linear-gradient(135deg, #fff5f9 0%, #fff 100%);
+  padding: 80px 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .workplace__hero {
+    padding: 60px 0;
+  }
+}
+.workplace__hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .workplace__hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+.workplace__imagesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 48px auto 0;
+}
+@media (max-width: 968px) {
+  .workplace__imagesGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+}
+.workplace__imageItem {
+  height: 100%;
+}
+.workplace__imageItem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.workplace__subtitle {
+  font-size: 24px;
+  color: #f5478a;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .workplace__subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+.workplace__description {
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 900px;
+}
+@media (max-width: 768px) {
+  .workplace__description {
+    font-size: 16px;
+  }
+}
+.workplace__packages {
+  padding: 80px 0;
+  background: #ffffff;
+}
+@media (max-width: 768px) {
+  .workplace__packages {
+    padding: 60px 0;
+  }
+}
+.workplace__packagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .workplace__packagesGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+.workplace__info {
+  padding: 60px 0;
+  background: #f8f8f8;
+}
+@media (max-width: 768px) {
+  .workplace__info {
+    padding: 40px 0;
+  }
+}
+.workplace__note {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  background: linear-gradient(135deg, #fff5f9 0%, #fff 100%);
+  border: 2px solid rgba(245, 71, 138, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(245, 71, 138, 0.08);
+  position: relative;
+}
+@media (max-width: 768px) {
+  .workplace__note {
+    padding: 20px 24px;
+  }
+}
+.workplace__note p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333333;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .workplace__note p {
+    font-size: 15px;
+  }
+}
+.workplace__note p strong {
+  color: #f5478a;
+  font-weight: 700;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .workplace__note p strong {
+    font-size: 16px;
+  }
+}
+
+.workplaceCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.workplaceCard:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+}
+.workplaceCard__header {
+  background: linear-gradient(135deg, #f5d9b8 0%, #f0c89f 100%);
+  padding: 40px 32px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .workplaceCard__header {
+    padding: 32px 24px;
+  }
+}
+.workplaceCard__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #7d5e3f;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .workplaceCard__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+.workplaceCard__price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.workplaceCard__priceMain {
+  font-size: 42px;
+  font-weight: 700;
+  color: #7d5e3f;
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  .workplaceCard__priceMain {
+    font-size: 36px;
+  }
+}
+.workplaceCard__priceHour {
+  font-size: 15px;
+  color: #8d6e4f;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .workplaceCard__priceHour {
+    font-size: 14px;
+  }
+}
+.workplaceCard__description {
+  font-size: 15px;
+  color: #8d6e4f;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+  padding: 10px 30px;
+}
+@media (max-width: 768px) {
+  .workplaceCard__description {
+    font-size: 14px;
+  }
+}
+.workplaceCard__description strong {
+  font-weight: 700;
+  color: #6d4e2f;
+}
+.workplaceCard__features {
+  padding: 32px;
+  background: #ffffff;
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .workplaceCard__features {
+    padding: 24px;
+  }
+}
+.workplaceCard__features strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #6d4e2f;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.workplaceCard__features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+.workplaceCard__features ul li {
+  position: relative;
+  padding-left: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .workplaceCard__features ul li {
+    font-size: 13px;
+  }
+}
+.workplaceCard__features ul li::before {
+  content: none;
+}
+.workplaceCard__button {
+  margin: 0 32px 32px 32px;
+}
+@media (max-width: 768px) {
+  .workplaceCard__button {
+    margin: 0 24px 24px 24px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal__content {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 20px;
+    max-height: 95vh;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #5d5d5d;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+.modal__close:hover {
+  color: #f5478a;
+}
+.modal__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 12px;
+  padding-right: 32px;
+}
+@media (max-width: 768px) {
+  .modal__title {
+    font-size: 20px;
+  }
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modalForm__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.modalForm__field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+.modalForm__field input,
+.modalForm__field select,
+.modalForm__field textarea {
+  padding: 10px 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+.modalForm__field input:focus,
+.modalForm__field select:focus,
+.modalForm__field textarea:focus {
+  outline: none;
+  border-color: #f5478a;
+  box-shadow: 0 0 0 3px rgba(245, 71, 138, 0.1);
+}
+.modalForm__field textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+.modalForm__checkboxField {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 0;
+}
+.modalForm__checkboxField input[type=checkbox] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.modalForm__checkboxField label {
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.modalForm__submit {
+  margin-top: 4px;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 20px 0;
+}
+.successMessage__icon {
+  width: 64px;
+  height: 64px;
+  background: #f5478a;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto 24px;
+  animation: scaleIn 0.4s ease;
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.successMessage h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .successMessage h2 {
+    font-size: 22px;
+  }
+}
+.successMessage p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .successMessage p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=WorkplaceRentalPage.module.css.map */

@@ -1,0 +1,302 @@
+.franchise {
+  padding: 80px 0 96px;
+}
+@media (max-width: 768px) {
+  .franchise {
+    padding: 56px 0 72px;
+  }
+}
+.franchise__top {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.franchise__title {
+  margin: 0 0 16px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .franchise__title {
+    font-size: 28px;
+  }
+}
+.franchise__subtitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+}
+@media (max-width: 768px) {
+  .franchise__subtitle {
+    font-size: 15px;
+  }
+}
+.franchise__cards {
+  max-width: 640px;
+  margin: 0 auto 72px;
+}
+@media (max-width: 768px) {
+  .franchise__cards {
+    margin-bottom: 56px;
+  }
+}
+.franchise__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.franchise__bottom {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+  padding: 40px 48px;
+  border-radius: 32px;
+  background-color: #ffe3f0;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .franchise__bottom {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+  }
+}
+@media (max-width: 600px) {
+  .franchise__bottom {
+    border-radius: 24px;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+}
+.franchise__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.franchise__image {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 32px;
+  display: block;
+}
+@media (max-width: 600px) {
+  .franchise__image {
+    max-width: 260px;
+    border-radius: 24px;
+  }
+}
+
+/* ---------- Franchise card ---------- */
+.franchise-card {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+.franchise-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+}
+@media (max-width: 768px) {
+  .franchise-card {
+    border-radius: 16px;
+  }
+}
+.franchise-card__top {
+  padding: 40px 32px;
+  background: linear-gradient(135deg, #f5d9b8 0%, #f0c89f 100%);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .franchise-card__top {
+    padding: 32px 24px;
+  }
+}
+.franchise-card__title {
+  margin: 0 0 24px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #7d5e3f;
+}
+@media (max-width: 768px) {
+  .franchise-card__title {
+    font-size: 22px;
+  }
+}
+.franchise-card__fee, .franchise-card__royalty {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: #8d6e4f;
+}
+.franchise-card__label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.franchise-card__value {
+  font-weight: 700;
+  color: #7d5e3f;
+}
+.franchise-card__included-title {
+  margin: 20px 0 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #7d5e3f;
+}
+.franchise-card__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #8d6e4f;
+}
+.franchise-card__bottom {
+  padding: 32px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .franchise-card__bottom {
+    padding: 24px;
+  }
+}
+.franchise-card__period {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555555;
+}
+.franchise-card__button {
+  align-self: center;
+  min-width: 190px;
+  font-size: 14px;
+}
+
+/* ---------- Bottom info block ---------- */
+.franchise-info__title {
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .franchise-info__title {
+    font-size: 24px;
+  }
+}
+.franchise-info__text {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+}
+.franchise-info__list {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333;
+}
+.franchise-info__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media (max-width: 480px) {
+  .franchise-info__buttons {
+    flex-direction: column;
+  }
+}
+.franchise-info__link {
+  text-decoration: none;
+}
+.franchise-info__button {
+  font-size: 14px;
+  min-width: 190px;
+}
+
+/* ---------- Success message in modal ---------- */
+.success-message {
+  text-align: center;
+}
+.success-message__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 2px solid #38c172;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #38c172;
+}
+.success-message__title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.success-message__text {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+}
+.success-message__button {
+  min-width: 170px;
+  font-size: 14px;
+}
+
+/* ---------- Modal form ---------- */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.modal-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.modal-form__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+.modal-form__input, .modal-form__select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  outline: none;
+}
+.modal-form__input:focus, .modal-form__select:focus {
+  border-color: #f5478a;
+}
+.modal-form__checkbox-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 4px;
+}
+.modal-form__checkbox {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+.modal-form__checkbox-label {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #444444;
+}
+.modal-form__submit {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 14px;
+}/*# sourceMappingURL=FranchisePage.module.css.map */
