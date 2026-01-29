@@ -36,3 +36,6 @@ dist-ssr
 coverage
 *.lcov
 .nyc_output
+# Playwright
+test-results/
+playwright-report/
