@@ -1,4 +1,6 @@
 [![CI](https://github.com/maratryspekov/chica-groom/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/maratryspekov/chica-groom/actions/workflows/ci.yml)
+[![Playwright Tests](https://img.shields.io/badge/tested%20with-Playwright-45ba4b?logo=playwright)](https://playwright.dev/)
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black?logo=vercel)](https://chica-groom.vercel.app)
 
 # 🐾 Chica Groom
 
