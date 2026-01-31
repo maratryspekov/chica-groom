@@ -4,7 +4,7 @@
 
 Modern website for a dog grooming salon in Berlin, Germany.
 
-🚀 **[Live Demo](https://chica-groom.com)** | 📧 [Contact](mailto:chicagroom@gmail.com)
+🚀 **[Live Demo](https://chica-groom.vercel.app)** | 📧 [Contact](mailto:chicagroom@gmail.com)
 
 ![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue) ![Node.js](https://img.shields.io/badge/Node.js-22-green)
 
